@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: hsl(218, 23%, 16%);
+    display: flex;
+    justify-content: center;
+    font-family: 'Manrope', sans-serif;
+    align-items: center;
+
+}
+
+.quadro {
+    background-color: hsl(217, 19%, 24%);
+    text-align: center;
+    width: 600px;
+    height: 270px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+       
+}
+
+.textos {
+font-weight: 800;
+}
+
+.textos h3 {
+    padding: 20px;
+    color: hsl(150, 100%, 66%);
+    font-size: 15px;
+}
+.textos p {
+    font-size: 26px;
+    width: 500px;
+    padding-bottom: 20px;
+    color: hsl(193, 38%, 86%);
+}
+
+.divisor {
+    width: 380px;
+}
+
+button {
+    width: 50px;
+    height: 50px; 
+    background-color: hsl(150, 100%, 66%); 
+    position: absolute;
+    top: 240px;
+    border-radius: 50%;
+    border-style: none;
+}
+
+button:hover {
+    box-shadow: 0px 0px 30px hsla(150, 100%, 66%, 0.592) ;
+    cursor: pointer;
+}
+
+.botao {
+    padding-top: 5px;
+}
+
+@media (max-width: 375px) {
+    .quadro {
+        width: 270px;
+    }
+
+    .divisor {
+        width: 200px;
+    }
+
+    .textos p {
+        width: 200px;
+        font-size: 20px;
+    }
+}
